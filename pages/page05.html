@@ -15,17 +15,18 @@
             background-color: black;
             overflow: hidden;
         }
-
         #game-container {
             width: 100vw;
             height: 100vh;
-            background-size: cover;
+            background-size: contain;
             background-position: center;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             align-items: center;
-            position: relative;
+            background-repeat: no-repeat;
+            
+           
         }
 
         #character {
@@ -35,18 +36,13 @@
         }
 
         #textbox-container {
-            width: 1000px;
-            height: 1000px;
+            width: 850px;
+            height: 120px;
             background-color: black;
             border: 6px solid white;
             padding: 20px;
 
             margin-bottom: 20px;
-        }
-        .Character {
-            position: center;
-            bottom: 0;
-            transform: translate(0%, 35%);
         }
 
         #textbox {
@@ -64,7 +60,7 @@
         }
         .choices a {
             display: block;
-            color: rgb(140, 255, 0);
+            color: rgb(0, 255, 26);
             text-decoration: none;
             padding: 10px 20px;
             margin: 10px auto;
@@ -75,29 +71,19 @@
             z-index: 3;
         }
         .choices a:hover {
-            color:yellow
+            color: #e1ff00;
         }
     </style>
 </head>
 
 <body>
-    <div id="game-container" style="background-image: url('bg1.jpg');">
-        <img id="character" src="../images/Chib.png" class="Character">
+    <div id="game-container" style="background-image: url('../images/enterschool.png');">
+    
         <div id="textbox-container">
             <div id="textbox">
-                <p>Welcome to <span style="color: rgb(0, 255, 0);">Lucky's First Day!</span></p>
-                <p>
-                 a non-linear visual narrative meant to address the <span style="color: red;">harmful</span> sterotypes and <span style="color: red;">uncomfortable</span> 
-                 situations that some people with autism face.
-                </p>
-                <p> While the main focus for this story is towards people with autism
-                , it can resonate with anyone who has struggled with social situations, bullying, and new situations. </p>
+                <p id="dialogue">Help Lucky get through the day! </p>
                 <div class="choices">
-                    <a href="../pages/page01.html">Begin</a>
+                
+                    <a href="../pages/page04.html">></a>
                 </div>
             </div>
-        </div>
-    </div>
-</body>
-
-</html>
