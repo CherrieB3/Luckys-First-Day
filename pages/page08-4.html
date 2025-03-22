@@ -14,7 +14,7 @@
             padding: 0;
             background-color: black;
             overflow: hidden;
-            filter: blur(0.5px);
+            filter: blur(0px);
         }
         #game-container {
             width: 100vw;
@@ -51,6 +51,7 @@
             font-family: 'Pixelify Sans', sans-serif;
             font-size: 20px;
             text-align: center;
+            transform: translateY(-20px);
         }
 
         .choices {
@@ -58,6 +59,7 @@
             cursor: pointer;
             display: block;
             margin-top: 10px;
+            transform: translateY(-20px);
         }
         .choices a {
             display: block;
@@ -78,13 +80,12 @@
 </head>
 
 <body>
-    <div id="game-container" style="background-image: url(../images/foundroom.png);">
+    <div id="game-container" style="background-image: url(../images/in_class.png);">
     
         <div id="textbox-container">
             <div id="textbox">
-                <p id="dialogue"><span style="color: rgb(0, 255, 26);">Lucky</span>:<span style="color: rgb(133, 133, 133);">....Room 304? ..I made it to class.</span></p>
+                <p id="dialogue">Nows your time to act! While a walk in the hallway for other people may seem like an every other day.</p>
+                <p id="dialogue">For Lucky it can be pretty overwhelming, which is okay!</p>
                 <div class="choices">
-                
-                    <a href="../pages/page08.html">></a>
-                </div>
+                    <a href="../pages/page08-5.html">></a>
             </div>

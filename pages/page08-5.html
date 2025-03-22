@@ -14,7 +14,7 @@
             padding: 0;
             background-color: black;
             overflow: hidden;
-            filter: blur(0.5px);
+            filter: blur(0px);
         }
         #game-container {
             width: 100vw;
@@ -51,6 +51,7 @@
             font-family: 'Pixelify Sans', sans-serif;
             font-size: 20px;
             text-align: center;
+            transform: translateY(-20px);
         }
 
         .choices {
@@ -63,13 +64,14 @@
             display: block;
             color: rgb(0, 255, 26);
             text-decoration: none;
-            padding: 10px 20px;
+            padding: px 20px;
             margin: 10px auto;
             border-radius: 5px;
             width: 200px;
-            font-size: 1em;
+            font-size: 15px;
             position: relative;
             z-index: 3;
+            transform: translateY(-10px);
         }
         .choices a:hover {
             color: #e1ff00;
@@ -78,13 +80,14 @@
 </head>
 
 <body>
-    <div id="game-container" style="background-image: url(../images/foundroom.png);">
+    <div id="game-container" style="background-image: url(../images/in_class.png);">
     
         <div id="textbox-container">
             <div id="textbox">
-                <p id="dialogue"><span style="color: rgb(0, 255, 26);">Lucky</span>:<span style="color: rgb(133, 133, 133);">....Room 304? ..I made it to class.</span></p>
+                <p id="dialogue"> What do you think lucky should do?</p>
                 <div class="choices">
                 
-                    <a href="../pages/page08.html">></a>
-                </div>
+                    <a href="../pages/page08-6A.html">A.take a deep breath</a>
+                    <a href="../pages/page08-6B.html">B.count objects in the room</a>
+                    <a href="../pages/page08-6C.html">C.pull through</a>
             </div>
