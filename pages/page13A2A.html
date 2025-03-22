@@ -14,45 +14,47 @@
             padding: 0;
             background-color: black;
             overflow: hidden;
+            filter: blur(0px);
         }
-
         #game-container {
             width: 100vw;
             height: 100vh;
-            background-size: cover;
+            background-size: contain;
             background-position: center;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             align-items: center;
-            position: relative;
+            background-repeat: no-repeat;
+            
+           
         }
 
         #character {
             position: absolute;
             bottom: 150px;
-            height: 45vh;
+            height: 50vh;
+        }
+        .intercat {
+            height: 70vh;
+            transform: translateY(30px);
+            z-index:1;
         }
 
         #textbox-container {
-            width: 1000px;
-            height: 1000px;
+            width: 850px;
+            height: 120px;
             background-color: black;
             border: 6px solid white;
             padding: 20px;
-
             margin-bottom: 20px;
-        }
-        .Character {
-            position: center;
-            bottom: 0;
-            transform: translate(0%, 140px);
+            z-index: 2;
         }
 
         #textbox {
             color: white;
             font-family: 'Pixelify Sans', sans-serif;
-            font-size: 20px;
+            font-size: 12px;
             text-align: center;
         }
 
@@ -64,42 +66,35 @@
         }
         .choices a {
             display: block;
-            color: rgb(140, 255, 0);
+            color: rgb(0, 255, 26);
             text-decoration: none;
             padding: 10px 20px;
             margin: 10px auto;
             border-radius: 5px;
             width: 200px;
-            font-size: 1em;
+            font-size: 15px;
             position: relative;
             z-index: 3;
         }
         .choices a:hover {
-            color:yellow
+            color: #e1ff00;
         }
     </style>
 </head>
 
 <body>
-    <div id="game-container" style="background-image: url('bg1.jpg');">
-        <img id="character" src="images/Chib.png" class="Character">
+    <div id="game-container" style="background-image: url(../images/classroom-test\ bkg.png);">
+        <img id="intercat" src="../images/cyntia-pause.png" alt="intercat" class="intercat">
+    
         <div id="textbox-container">
             <div id="textbox">
-                <p>Welcome to <span style="color: rgb(0, 255, 0);">Lucky's First Day!</span></p>
-                <p>
-                 a non-linear visual narrative meant to address the <span style="color: red;">harmful</span> sterotypes and <span style="color: red;">uncomfortable</span> 
-                 situations that some people with autism face.
-                </p>
-                <p> While the main focus for this story is towards people with autism
-                , it can resonate with anyone who has struggled with social situations, bullying, and new situations. </p>
-                <p>Low volume is advised as the story contains loud noises</p>
-
+                <p id="dialogue"><span style="color: rgb(0, 255, 26);">Lucky</span>:"Saturn. The rings are made of ice and rock, and did you know—Saturn's interior is thought to be composed of a rocky core,
+                     surrounded by a deep layer of metallic hydrogen, an intermediate layer of liquid hydrogen and liquid helium, and an outer
+                      layer of gas. Saturn has a pale yellow hue, due to ammonia crystals in its upper atmosphere. An electrical current in the metallic hydrogen layer is thought to give rise to Saturn's
+                       planetary magnetic field, which is weaker than Earth's, but has a magnetic moment 580 times that of Earth because of Saturn's greater size. Saturn's magnetic field strength is about a
+                        twentieth that of Jupiter. The outer atmosphere is generally bland and lacking in contrast, although long-lived features can appear. Wind speeds on Saturn can reach 1,800 kilometres per hour or 1,100 miles per hour."</p>
                 <div class="choices">
-                    <a href="pages/page01.html">Begin</a>
+                
+                    <a href="../pages/page13A2A2.html">></a>
                 </div>
             </div>
-        </div>
-    </div>
-</body>
-
-</html>
