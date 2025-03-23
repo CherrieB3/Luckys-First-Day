@@ -14,7 +14,7 @@
             padding: 0;
             background-color: black;
             overflow: hidden;
-            filter: blur(1.4px);
+            filter: blur(px);
         }
         #game-container {
             width: 100vw;
@@ -77,7 +77,7 @@
             font-size: 15px;
             position: relative;
             z-index: 3;
-            transform: translateY(-10px)
+            transform: translateY(20px)
         }
         .choices a:hover {
             color: #e1ff00;
@@ -86,24 +86,23 @@
 </head>
 
 <body>
-    <div id="game-container" style="background-image: url(../images/frontclass2.png);">
+    <div id="game-container" style="background-image: url(../images/classroom-test\ bkg.png);">
         <div id="textbox-container">
             <div id="textbox">
-                <p id="dialogue"><span style="color: rgb(0, 255, 26);">Lucky</span>:H-hi My names Lucky Timothy Simon. I was born in Tabby Town, CAT. My favorite color is orange. My favorite game is Meowcraft- I don't like loud noises, spicy food, rough textures.. One time when I was little i tripped down the stairs......</p>
+                <p id="dialogue">The bell rings. Class is over.</p>
                 <div class="choices">
                 
-                    <a href="../pages/page20A2.html">></a>
+                    <a href="../pages/page38.html">></a>
                 </div>
             </div>
         </div>
         </div>
-        <audio id="myAudio" autoplay loop>
-            <source src="../sounds/static.mp3" type="audio/mp3">
+        <audio id="myAudio" autoplay>
+            <source src="../sounds/bellring.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
         
         <script>
-             document.getElementById("myAudio").volume = 0.15; // 50% volume
             document.addEventListener("DOMContentLoaded", function () {
                 const audio = document.getElementById("myAudio");
         

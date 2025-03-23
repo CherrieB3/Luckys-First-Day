@@ -92,10 +92,28 @@
                 <p id="dialogue"><span style="color: rgb(0, 255, 26);">Lucky</span>:<span style="color: rgb(248, 0, 0);">NORMAL</span></p>
                 <div class="choices">
                 
-                    <a href="../pages/page34.html">></a>
+                    <a href="../pages/page36.html">></a>
                 </div>
             </div>
         </div>
         </div>
 </body>
+<audio id="myAudio" autoplay>
+    <source src="../sounds/static.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    document.getElementById("myAudio").volume = 0.5; // 50% volume
+    document.addEventListener("DOMContentLoaded", function () {
+        const audio = document.getElementById("myAudio");
+
+        function playAudio() {
+            audio.play().catch(error => console.error("Autoplay failed:", error));
+            document.removeEventListener("click", playAudio);
+        }
+
+        document.addEventListener("click", playAudio);
+    });
+</script>
 </html>
