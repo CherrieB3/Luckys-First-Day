@@ -97,5 +97,23 @@
             </div>
         </div>
         </div>
+        <audio id="myAudio" autoplay loop>
+            <source src="../sounds/static.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <script>
+             document.getElementById("myAudio").volume = 0.4; // 50% volume
+            document.addEventListener("DOMContentLoaded", function () {
+                const audio = document.getElementById("myAudio");
+        
+                function playAudio() {
+                    audio.play().catch(error => console.error("Autoplay failed:", error));
+                    document.removeEventListener("click", playAudio);
+                }
+        
+                document.addEventListener("click", playAudio);
+            });
+        </script>
 </body>
 </html>
