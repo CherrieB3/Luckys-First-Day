@@ -14,41 +14,39 @@
             padding: 0;
             background-color: black;
             overflow: hidden;
-            filter: blur(px);
         }
+
         #game-container {
             width: 100vw;
             height: 100vh;
-            background-size: contain;
+            background-size: cover;
             background-position: center;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             align-items: center;
-            background-repeat: no-repeat;
-            
-           
+            position: relative;
         }
 
         #character {
             position: absolute;
             bottom: 150px;
-            height: 50vh;
-        }
-        .intercat {
-            height: 70vh;
-            transform: translateY(30px);
-            z-index:1;
+            height: 45vh;
         }
 
         #textbox-container {
-            width: 850px;
-            height: 120px;
-            background-color: rgb(104, 150, 194);
-            border: 6px solid rgb(255, 255, 255);
+            width: 1000px;
+            height: 1000px;
+            background-color: black;
+            border: 6px solid white;
             padding: 20px;
+
             margin-bottom: 20px;
-            z-index: 2;
+        }
+        .Character {
+            position: center;
+            bottom: 0;
+            transform: translate(0%, 100px);
         }
 
         #textbox {
@@ -56,48 +54,48 @@
             font-family: 'Pixelify Sans', sans-serif;
             font-size: 20px;
             text-align: center;
-            transform: translateY(-20px);
-            z-index:2;
         }
 
         .choices {
-            color: rgb(255, 255, 255);
+            color: rgb(149, 255, 0);
             cursor: pointer;
             display: block;
             margin-top: 10px;
         }
         .choices a {
             display: block;
-            color: rgb(0, 255, 26);
+            color: rgb(0, 68, 255);
             text-decoration: none;
-            padding: 0px 20px;
+            padding: 10px 20px;
             margin: 10px auto;
             border-radius: 5px;
             width: 200px;
-            font-size: 15px;
+            font-size: 1em;
             position: relative;
             z-index: 3;
-            transform: translateY(-10px)
         }
         .choices a:hover {
-            color: #e1ff00;
+            color:yellow
         }
     </style>
 </head>
 
 <body>
-    <div id="game-container" style="background-image: url(../images/classroom-test\ bkg.png);">
-        <img id="intercat" src="../images/emma ego.png" alt="intercat" class="intercat">
+    <div id="game-container" style="background-image: url('bg1.jpg');">
+        <img id="character" src="../images/Screenshot 2025-03-23 at 3.57.50 PM.png" class="Character">
         <div id="textbox-container">
             <div id="textbox">
-                <p id="dialogue"><span style="color: rgb(156, 200, 255);">Emma</span>:“It’s okay if you don’t know what to say! I can talk for both of us.”</p>
-                <p id="dialogue">Emma giggles like she just did something helpful.</p>
-                    <div class="choices">
-                
-                    <a href="../pages/page45C3.html">></a>
+                <p>This is the end of <span style="color: rgb(0, 255, 0);">Lucky's First Day!</span></p>
+                <p>I may come back to add more to the story, but for now this is the end! </p>
+                <p>Thank you for playing!</p>
+                <p><span style="color: rgb(77, 255, 0);">Want to play again?</span></p>
+
+                <div class="choices">
+                    <a href="../pages/page01.html">Restart</a>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 </body>
+
 </html>
