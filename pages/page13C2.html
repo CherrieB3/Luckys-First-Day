@@ -14,7 +14,7 @@
             padding: 0;
             background-color: black;
             overflow: hidden;
-            filter: blur(0px);
+            filter: blur(px);
         }
         #game-container {
             width: 100vw;
@@ -44,8 +44,8 @@
         #textbox-container {
             width: 850px;
             height: 120px;
-            background-color: black;
-            border: 6px solid white;
+            background-color: rgb(95, 54, 37);
+            border: 6px solid rgb(255, 233, 222);
             padding: 20px;
             margin-bottom: 20px;
             z-index: 2;
@@ -56,6 +56,8 @@
             font-family: 'Pixelify Sans', sans-serif;
             font-size: 20px;
             text-align: center;
+            transform: translateY(-20px);
+            z-index:2;
         }
 
         .choices {
@@ -68,13 +70,14 @@
             display: block;
             color: rgb(0, 255, 26);
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 0px 20px;
             margin: 10px auto;
             border-radius: 5px;
             width: 200px;
             font-size: 15px;
             position: relative;
             z-index: 3;
+            transform: translateY(-10px)
         }
         .choices a:hover {
             color: #e1ff00;
@@ -84,12 +87,16 @@
 
 <body>
     <div id="game-container" style="background-image: url(../images/classroom-test\ bkg.png);">
-        <img id="intercat" src="../images/cyntia-pause.png" alt="intercat" class="intercat">
+        <img id="intercat" src="../images/cyn-confused.png" alt="intercat" class="intercat">
+    
         <div id="textbox-container">
             <div id="textbox">
-                <p id="dialogue"><span style="color: rgb(0, 255, 26);">Lucky</span>:“Do you think black holes ever lead somewhere?”</p>
+                <p id="dialogue"><span style="color: rgb(255, 216, 109);">Cyntia</span>: “Uh… wait, what? Oh, like wormholes? I saw a show about that once.” </p>
                 <div class="choices">
                 
-                    <a href="../pages/page13C2.html">></a>
+                    <a href="../pages/page13C2A.html">A.engage</a>
+                    <a href="../pages/page13C2B.html">B.Dial back</a>
+                    <a href="../pages/page13C2C.html">C.Keep pushing</a>
                 </div>
             </div>
+        </div>
