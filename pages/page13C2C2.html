@@ -14,7 +14,7 @@
             padding: 0;
             background-color: black;
             overflow: hidden;
-            filter: blur(0px);
+            filter: blur(px);
         }
         #game-container {
             width: 100vw;
@@ -87,34 +87,14 @@
 
 <body>
     <div id="game-container" style="background-image: url(../images/classroom-test\ bkg.png);">
-        <img id="intercat" src="../images/cyn-ty.png" alt="intercat" class="intercat">
+        <img id="intercat" src="../images/cyntia-overwhelmed.png" alt="intercat" class="intercat">
     
         <div id="textbox-container">
             <div id="textbox">
-                <p id="dialogue"><span style="color: rgb(255, 216, 109);">Cyntia</span>:Oh! I think class is about to start. It was nice talking though! </p>
+                <p id="dialogue"><span style="color: rgb(255, 216, 109);">Cyntia</span>: “T-time...portals..?” </p>
                 <div class="choices">
                 
-                    <a href="../pages/page13A.html">></a>
+                    <a href="../pages/page13C2C3.html">></a>
                 </div>
             </div>
-            <audio id="myAudio" autoplay >
-                <source src="../sounds/bellring.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
-            
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const audio = document.getElementById("myAudio");
-            
-                    function playAudio() {
-                        audio.play().catch(error => console.error("Autoplay failed:", error));
-                        document.removeEventListener("click", playAudio);
-                    }
-            
-                    document.addEventListener("click", playAudio);
-                });
-            </script>
         </div>
-        </div>
-</body>
-</html>

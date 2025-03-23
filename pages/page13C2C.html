@@ -44,8 +44,8 @@
         #textbox-container {
             width: 850px;
             height: 120px;
-            background-color: rgb(95, 54, 37);
-            border: 6px solid rgb(255, 233, 222);
+            background-color: black;
+            border: 6px solid white;
             padding: 20px;
             margin-bottom: 20px;
             z-index: 2;
@@ -56,8 +56,6 @@
             font-family: 'Pixelify Sans', sans-serif;
             font-size: 20px;
             text-align: center;
-            transform: translateY(-20px);
-            z-index:2;
         }
 
         .choices {
@@ -70,14 +68,13 @@
             display: block;
             color: rgb(0, 255, 26);
             text-decoration: none;
-            padding: 0px 20px;
+            padding: 10px 20px;
             margin: 10px auto;
             border-radius: 5px;
             width: 200px;
             font-size: 15px;
             position: relative;
             z-index: 3;
-            transform: translateY(-10px)
         }
         .choices a:hover {
             color: #e1ff00;
@@ -87,34 +84,12 @@
 
 <body>
     <div id="game-container" style="background-image: url(../images/classroom-test\ bkg.png);">
-        <img id="intercat" src="../images/cyn-ty.png" alt="intercat" class="intercat">
-    
+        <img id="intercat" src="../images/cyntia-pause.png" alt="intercat" class="intercat">
         <div id="textbox-container">
             <div id="textbox">
-                <p id="dialogue"><span style="color: rgb(255, 216, 109);">Cyntia</span>:Oh! I think class is about to start. It was nice talking though! </p>
+                <p id="dialogue"><span style="color: rgb(0, 255, 26);">Lucky</span>:“YEA!! Some people say they could even be time portals.”</p>
                 <div class="choices">
                 
-                    <a href="../pages/page13A.html">></a>
+                    <a href="../pages/page13C2C2.html">></a>
                 </div>
             </div>
-            <audio id="myAudio" autoplay >
-                <source src="../sounds/bellring.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
-            
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const audio = document.getElementById("myAudio");
-            
-                    function playAudio() {
-                        audio.play().catch(error => console.error("Autoplay failed:", error));
-                        document.removeEventListener("click", playAudio);
-                    }
-            
-                    document.addEventListener("click", playAudio);
-                });
-            </script>
-        </div>
-        </div>
-</body>
-</html>
