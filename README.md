@@ -3,3 +3,5 @@ Non-linear narrative using Hyperlinks to tell the story of Lucky. A boy with aut
 
 Background Credits:
 https://www.deviantart.com/firesnake666/art/Anime-Background-Classroom-II-287250976
+
+https://www.artstation.com/artwork/Belq4
