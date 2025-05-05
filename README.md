@@ -5,3 +5,6 @@ Background Credits:
 https://www.deviantart.com/firesnake666/art/Anime-Background-Classroom-II-287250976
 
 https://www.artstation.com/artwork/Belq4
+
+https://www.pinterest.com/pin/405112928976902145/
+
