@@ -15,7 +15,6 @@
             background-color: black;
             overflow: hidden;
             filter: blur(0px);
-            
         }
         #game-container {
             width: 100vw;
@@ -45,8 +44,8 @@
         #textbox-container {
             width: 850px;
             height: 120px;
-            background-color: rgb(0, 0, 0);
-            border: 6px solid rgb(255, 255, 255);
+            background-color: rgb(49, 22, 27);
+            border: 6px solid rgb(255, 239, 203);
             padding: 20px;
             margin-bottom: 20px;
             z-index: 2;
@@ -66,6 +65,7 @@
             cursor: pointer;
             display: block;
             margin-top: 10px;
+            filter: blur(0px);
         }
         .choices a {
             display: block;
@@ -78,11 +78,9 @@
             font-size: 15px;
             position: relative;
             z-index: 3;
-            transform: translateY(0px);
-            filter: blur(1.5px);
+            transform: translateY(-10px)
             
         }
-
         .choices a:hover {
             color: #e1ff00;
         }
@@ -91,16 +89,13 @@
 
 <body>
     <div id="game-container" style="background-image: url(../images/lunch-bkg.png);">
-        <img id="intercat" src="../images/Pepsi-Pause.png" alt="intercat" class="intercat">
+        <img id="intercat" src="../images/Pepsi-Sympathy.png" alt="intercat" class="intercat">
         <div id="textbox-container">
             <div id="textbox">
-                <p id="dialogue"><span style="color: rgb(0, 255, 26);">Lucky</span>:<span style="color: rgb(133, 133, 133);">Is that okay? Do I say something now? What do I say?</span></p>
-
+                <p id="dialogue"><span style="color: rgb(142, 53, 83);">Pepsi</span>:"No pressure. I get it. My cousin’s kinda the same way. We mostly talk about Sonic and Bugs." </p>
                 <div class="choices">
                 
-                    <a href="../pages/page81A.html">A.Direct</a>
-                    <a href="../pages/page81B.html">B.Be Honest</a>
-                    <a href="../pages/page81C.html">C.Greeting</a>
+                    <a href="../pages/page83.html">></a>
                 </div>
             </div>
         </div>
